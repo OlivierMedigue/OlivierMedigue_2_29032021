@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Reservia</title>
+    <link rel="stylesheet" href="font/Awesome/css/all.css">
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -11,8 +12,8 @@
         <nav>
             <div class="menu">
                 <ul>
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
+                    <li><a href="#hébergement">Hébergements</a></li>
+                    <li><a href="#Activités">Activités</a></li>
                     <li><a href="#">S'inscrire</a></li>
                 </ul>
             </div>
@@ -22,24 +23,44 @@
         <h1> Trouvez votre hébergement pour des vacances de rève</h1>  
         <p>En plein centre ville ou en pleine nature</p>
         <div class="recherche">
+            <i class="fas fa-map-marker-alt"></i>
+            
             <input type="text" name="recherche" id="recherche">
             <label for="recherche">Recherche</label>    
         </div>
-        <div class="conteneur">
-            <div class="element 1">Filtres </div>
-            <div class="element 2">Économique </div>
-            <div class="element 3">Familial </div>
-            <div class="element 4">Romantique </div>
-            <div class="element 5">Animaux autorisés</div>
+        <div class="searchFilters">
+            <p>Filtres</p>
+            <div class="searchFiltersFilter">
+                <div class="searchFiltersFilterWrapicon">
+                  <i class="fas fa-money-bill-wave searchFiltersFilterWrapiconIcon" aria-hidden="true"></i>
+                </div>
+                <span class="searchFiltersFilterTitle">Économique</span>
+            </div>
+            <div class="searchFiltersFilter">
+                <div class="searchFiltersFilterWrapicon">
+                  <i class="fas fa-child searchFiltersFilterWrapiconIcon" aria-hidden="true"></i>
+                </div>
+                <span class="searchFiltersFilterTitle">Familial</span>
+            </div>
+            <div class="searchFiltersFilter">
+                <div class="searchFiltersFilterWrapicon">
+                  <i class="fas fa-heart searchFiltersFilterWrapiconIcon" aria-hidden="true"></i>
+                </div>
+                <span class="searchFiltersFilterTitle">Romantique</span>
+            </div>
+            <div class="searchFiltersFilter">
+                <div class="searchFiltersFilterWrapicon">
+                  <i class="fas fa-dog searchFiltersFilterWrapiconIcon" aria-hidden="true"></i>
+                </div>
+                <span class="searchFiltersFilterTitle">Animaux acceptés</span>
+            </div>
         </div>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
     </section>
     <section> <!-- Hébergement -->
-        <h2>Hébergements à Marseille</h2>
+        <h2 id="hébergement">Hébergements à Marseille</h2>
         <div class="conteneur2">
-            <div class="element 1">Auberge la Cannebière
-                <img src="images/hebergement/marcus-loke-WQJvWU_HZFo-unsplash.jpg"alt="Photo auberge de la cannebiere" /></a>
-            </div>
+            <div class="element 1">Auberge la Cannebière</div>
             <div class="element 2">Hôtel du port </div>
             <div class="element 3">Hôtel Les mouettes </div>
             <div class="element 4">Hôtel de la mer </div>
@@ -57,7 +78,7 @@
         </div>
     </aside>
     <section> <!--Box activités-->
-        <h2>Activités à Marseille</h2>
+        <h2 id="Activités">Activités à Marseille</h2>
         <div class="conteneur4">
             <div class="element 1">Vieux Port </div>
             <div class="element 2">Port de Pomègues </div>
