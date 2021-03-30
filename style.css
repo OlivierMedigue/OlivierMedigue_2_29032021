@@ -1,0 +1,48 @@
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('font/Raleway');
+    src: url('font/Raleway-Italic-VariableFont_wght.ttf') format('ttf'),
+         url('font/Raleway-VariableFont_wght.ttf') format('ttf'),
+    font-weight: normal;
+    font-style: normal;
+}
+body
+{
+    font-family: 'Raleway', Arial, sans-serif;
+}
+header
+{
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 150px;
+}
+header img
+{
+    left: 0px;
+    bottom: 0px;
+}
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 350px;
+}
+.recherche {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    font-weight: bold;
+}
