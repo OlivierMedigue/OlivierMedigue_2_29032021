@@ -125,30 +125,34 @@ section{
     display: flex;
     margin-left: 10em;
 }
-/*Body section class=hébergements*/
-em
-{
-    font-weight: bold;
+/*Body section class=hebergements*/
+.Hebergements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1em;
 }
-.popular{
+/*Body class=popular*/
+.Popular{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 1em;
-    width: 900px;
-    height: 600px;
-    background-color: red;
+    width: 60%;
+    height: 650px;
+    background-color: #F2F2F2;
     border-radius: 1rem;
 }
-.full_box {
+.full_box{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    height: 500px;
+    justify-content: space-around;
+    height: 450px;
 }
-.box {
-    width: 250px;
+.box{
+    width: 220px;
     height: 180px;
     border: 1px solid black;
     border-radius: 1rem;
@@ -156,7 +160,7 @@ em
     padding: 0.5em;
     background-color: white;
 }
-.box img {
+.box img{
     max-height: 100%;
     max-width: 100%;
     width: 100%;
@@ -178,17 +182,67 @@ em
     font-size: 0.9em;
     margin-left: 1em;
     margin-bottom: 1em;
-
-  
-
- 
-
 }
+/*Body aside class=Most popular*/
+.Most_Popular{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    width: 25%;
+    height: 650px;
+    background-color: #F2F2F2;
+    border-radius: 1rem;
+}
+.Most_Popular_text{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.full_box_aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px;
+}
+.box_aside{
+    display: flex;
+    flex-direction: row;
+    width: 260px;
+    height: 130px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    box-shadow :0 6px 10px grey;
+    padding: 0.5em;
+    background-color: white;
+
+}  
+.box_aside img{
+    display: flex;
+    justify-content: space-around;
+    max-height: 100%;
+    max-width: 100%;
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    object-fit: cover;   
+}
+.Descriptif_aside{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-end;
+    font-size: 0.9em;
+}
+/*Section Activities*/
+
 /*footer*/
 footer{
     display: flex;
     justify-content: flex-start;
     border: 1px solid #F2F2F2;
     background-color: #F2F2F2;
-    
 }
