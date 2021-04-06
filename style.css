@@ -10,9 +10,25 @@
 body {
     font-family: 'Raleway', Arial, sans-serif;
     max-width: 1440px;
+    margin: auto;
 }
 a:link {
     text-decoration: none;
+}
+
+/*responsive*/
+
+@media all and (max-width: 1240px){
+
+    .popular{
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 2em;
+    }
+    .aside{
+        width: auto;
+        margin-bottom: 2em;
+    }
 }
 
 /*Header*/
@@ -20,7 +36,7 @@ a:link {
 .container {
 	width: 1440px;
 	max-width: 100%;
-  	margin: 0;
+  	margin: auto;
 }
 .main-header .container {
 	display: flex;
@@ -43,14 +59,12 @@ header img {
     text-decoration: none;
     font-weight: bold;
 }
-.main-nav a {
+.main-nav a{
 	display: inline-block;
-	padding:  0.5em 2em;
- 
+	padding:  2em 2em; 
 }
 
-
-/*Body-section class=filter*/
+/*search bar*/
 
 .searchbar{
     border: 0 solid #f2f2f2;
@@ -68,13 +82,13 @@ header img {
     width: 40px;
 }
 .textsearch{
-    width: 250px;
+    width: 200px;
     padding-left: 10px;
     border-style: hidden;
 }
 .research{
     background-color: #0065FC;
-    width: 150px;       
+    width: 130px;       
     border: none;
     color: white;
     font-weight: bold;
