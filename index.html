@@ -10,63 +10,64 @@
     <header class="main-header"><!-- Logo et menu--> 
         <div class="container">
             <h1 class="logo Reservia">
-                <img src="images/logo/Reservia@3x.png" width="170" height="95" alt="logo Reservia">
+                <img src="images/logo/Reservia@3x.png" width="150" height="75" alt="logo Reservia">
             </h1>
             <nav class="main-nav">
                 <ul class="menu">
-                    <li><a href="#hébergement">Hébergements</a></li>
-                    <li><a href="#Activités">Activités</a></li>
-                    <li><a href="#">S'inscrire</a></li>
+                    <li><a href="#hebergements" class="text-hebergement">Hébergements</a></li>
+                    <li><a href="#activities" class="text-activitie">Activités</a></li>
+                    <li><a href="#" class="text-inscription">S'inscrire</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section class="filter"> <!-- Titre principal et champ de recherche-->
+    <section class="filter-menu"> <!-- principal title and search field-->
         <h1> Trouvez votre hébergement pour des vacances de rève</h1>  
         <p>En plein centre ville ou en pleine nature</p>
-        <div class="recherche">
-            <div class="LocationIcon">
+        <form class="searchbar">
+            <div class="icon">
                 <i class="fas fa-map-marker-alt"></i>
             </div>
-            <span class="search">
-                <input type="text" name="recherche" id="recherche">
-                <button form="recherche">Recherche</button>
-            </span>    
-        </div>
+            <input class="text-search" name="recherche">
+            <button class="research">
+                <p>Recherche</p></button>        
+        </form>
         <div class="Filters">
             <p>Filtres</p>
-            <div class="searchFiltersFilter">
-                <div class="searchFiltersFilterWrapicon">
-                  <i class="fas fa-money-bill-wave"></i>
+            <div class= "filters-icons">
+                <div class="searchFiltersFilter">
+                    <div class="searchFiltersFilterWrapicon">
+                    <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <span class="searchFiltersFilterTitle">Économique</span>
                 </div>
-                <span class="searchFiltersFilterTitle">Économique</span>
-            </div>
-            <div class="searchFiltersFilter">
-                <div class="searchFiltersFilterWrapicon">
-                  <i class="fas fa-child"></i>
+                <div class="searchFiltersFilter">
+                    <div class="searchFiltersFilterWrapicon">
+                    <i class="fas fa-child"></i>
+                    </div>
+                    <span class="searchFiltersFilterTitle">Familial</span>
                 </div>
-                <span class="searchFiltersFilterTitle">Familial</span>
-            </div>
-            <div class="searchFiltersFilter">
-                <div class="searchFiltersFilterWrapicon">
-                  <i class="fas fa-heart"></i>
+                <div class="searchFiltersFilter">
+                    <div class="searchFiltersFilterWrapicon">
+                    <i class="fas fa-heart"></i>
+                    </div>
+                    <span class="searchFiltersFilterTitle">Romantique</span>
                 </div>
-                <span class="searchFiltersFilterTitle">Romantique</span>
-            </div>
-            <div class="searchFiltersFilter">
-                <div class="searchFiltersFilterWrapicon">
-                  <i class="fas fa-dog"></i>
+                <div class="searchFiltersFilter">
+                    <div class="searchFiltersFilterWrapicon">
+                    <i class="fas fa-dog"></i>
+                    </div>
+                    <span class="searchFiltersFilterTitle">Animaux acceptés</span>
                 </div>
-                <span class="searchFiltersFilterTitle">Animaux acceptés</span>
             </div>
         </div>
-        <div class="info">
+        <div class="info"> <!--info bar-->
             <div class="InfoIcon">
                 <i class="fas fa-info"></i>
             </div>
             <span class="infoTitle">Plus de 500 logements sont disponibles dans cette ville</span>
     </section>
-    <section class="hebergements"> <!-- Hébergement -->
+    <section class="hebergements" id="hebergements"> <!-- Hébergement -->
         <div class="popular">
             <h2>Hébergements à Marseille</h2>
                 <div class="full-box">
@@ -167,8 +168,8 @@
                         <img src="images/hebergement/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin"/>
                         <div class="descriptif-aside">
                             <div class="text">
-                                <span><B>Hôtel Le soleil du matin</B><br /></span>
-                                <span>Nuit à partir de <B>128€</B></span>    
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <p>Nuit à partir de <B>128€</B></p>    
                             </div>                            
                             <div class="stars">
                                 <span class="full-star"><i class="fas fa-star"></i></span>
@@ -183,7 +184,7 @@
                         <img src="images/hebergement/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambres d'hôtes"/>
                         <div class="descriptif-aside">
                             <div class="text">
-                                <span><B>Au coeur de l'eau<br />Chambres d'hôtes</B><br /></span>
+                                <span><B>Au coeur de l'eau Chambres d'hôtes</B><br /></span>
                                 <span>Nuit à partir de <B>71€</B></span>
                             </div>                            
                             <div class="stars">
@@ -199,8 +200,8 @@
                         <img src="images/hebergement/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc"/>
                         <div class="descriptif-aside">
                             <div class="text">
-                                <span><B>Hôtel Tout bleu et Blanc</B><br /></span>
-                                <span>Nuit à partir de <B>68€</B></span>
+                                <p><B>Hôtel Tout bleu et Blanc</B></p>
+                                <p>Nuit à partir de <B>68€</B></p>
                             </div>                            
                             <div class="stars">
                                 <span class="full-star"><i class="fas fa-star"></i></span>
@@ -214,35 +215,47 @@
                 </div>
         </aside>
     </section>
-    <section class=activities> <!--Box activités-->
+    <section class="activities" id=activities> <!--Box activités-->
         <h2>Activités à Marseille</h2>
         <div class="full-activities">
             <div class="box-port">
                 <img src="images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"/>
-                <h3>Vieux Port</h3>
+                <div class="text-activities">
+                    <h3>Vieux Port</h3>
+                </div>                
             </div>
             <div class="box-dame-longchamp">
                 <div class="box-longchamp"> 
                     <img src="images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"/>
-                    <h3>Parc Longchamp</h3>
+                    <div class="text-activities">
+                        <h3>Parc Longchamp</h3>
+                    </div>
                 </div>
                 <div class="box-dame">           
                     <img src="images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre Dame de la Garde"/>
-                    <h3>Notre-Dame-de-la-Garde</h3>
+                    <div class="text-activities">
+                        <h3>Notre-Dame-de-la-Garde</h3>
+                    </div>
                 </div>
             </div> 
             <div class="box-calanques">           
                 <img src="images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Port national des Calanques"/>
-                <h3>Parc National des Calanques</h3>
+                <div class="text-activities">
+                    <h3>Parc National des Calanques</h3>
+                </div>
             </div>    
             <div class="box-pomegues-frioul">
                 <div class="box-pomegues">           
                     <img src="images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"/>
-                    <h3>Fort de Pomègues</h3>
+                    <div class="text-activities">
+                        <h3>Fort de Pomègues</h3>
+                    </div>
                 </div>
                 <div class="box-frioul"> 
                     <img src="images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul"/>
-                    <h3>Îles du Frioul</h3>                         
+                    <div class="text-activities">
+                        <h3>Îles du Frioul</h3>   
+                    </div>                      
                 </div>
             </div>                                      
         </div>
