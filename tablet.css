@@ -1,0 +1,133 @@
+@media all and (min-width:768px) and (max-width:991px)
+{
+
+/*filterMenu*/
+
+.filter-menu {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    align-content: center;
+}
+.Filters {
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    width: 80%;
+}
+.filters-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+}
+.searchFiltersFilter {
+    display: flex;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/*hebergements*/
+
+.hebergements {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    margin: auto;
+}
+.popular {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75%;
+    height: 45em;
+    background-color: #F2F2F2;
+    border-radius: 1rem;
+    padding: 1em;
+}
+.full-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+.box {
+    width: 45%;
+    height: 27%;
+    border-radius: 1rem;
+    box-shadow: 0 6px 10px grey;
+    padding: 0.5em;
+    background-color: white;
+}
+
+.most-popular {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    background-color: #F2F2F2;
+    border-radius: 1rem;
+    padding: 1em;
+    height: 39em;
+    margin-bottom: 5em;
+}
+.most-popular-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.full-box-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 84%;
+    margin-top: 1em;
+}
+.box-aside {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    height: 25%;
+    border-radius: 1rem;
+    box-shadow: 0 6px 10px grey;
+    padding: 0.5em;
+    background-color: white;
+}
+.box-aside img {
+    width: 45%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    object-fit: cover;
+}
+.box-aside-bleu {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    height: 25%;
+    border-radius: 1rem;
+    box-shadow: 0 6px 10px grey;
+    padding: 0.5em;
+    background-color: white;
+}
+.box-aside-bleu img {
+    width: 45%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    object-fit: cover;
+}

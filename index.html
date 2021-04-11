@@ -5,6 +5,8 @@
     <title>Reservia</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" media="screen and (max-width: 1199px)" href="desktop.css" />
+    <link rel="stylesheet" media="screen and (max-width: 991px)" href="tablet.css" />
 </head>
 <body>
     <header class="main-header"><!-- Logo et menu--> 
@@ -13,10 +15,10 @@
                 <img src="images/logo/Reservia@3x.png" width="150" height="75" alt="logo Reservia">
             </h1>
             <nav class="main-nav">
-                <ul class="menu">
-                    <li><a href="#hebergements" class="text-hebergement">Hébergements</a></li>
-                    <li><a href="#activities" class="text-activitie">Activités</a></li>
-                    <li><a href="#" class="text-inscription">S'inscrire</a></li>
+                <ul class="main-nav-menu">
+                    <li><a href="#hebergements" id="text">Hébergements</a></li>
+                    <li><a href="#activities" id="text">Activités</a></li>
+                    <li><a href="#" id="inscription">S'inscrire</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,34 +30,35 @@
             <div class="icon">
                 <i class="fas fa-map-marker-alt"></i>
             </div>
-            <input class="text-search" name="recherche">
+            <input class="text-search" name="recherche" value="Marseille,France">
             <button class="research">
-                <p>Recherche</p></button>        
+                <p>Recherche</p>
+            </button>        
         </form>
         <div class="Filters">
-            <p>Filtres</p>
+            <p><span class="bolder">Filtres</span></p>
             <div class= "filters-icons">
                 <div class="searchFiltersFilter">
                     <div class="searchFiltersFilterWrapicon">
-                    <i class="fas fa-money-bill-wave"></i>
+                        <i class="fas fa-money-bill-wave"></i>
                     </div>
                     <span class="searchFiltersFilterTitle">Économique</span>
                 </div>
                 <div class="searchFiltersFilter">
                     <div class="searchFiltersFilterWrapicon">
-                    <i class="fas fa-child"></i>
+                        <i class="fas fa-child"></i>
                     </div>
                     <span class="searchFiltersFilterTitle">Familial</span>
                 </div>
                 <div class="searchFiltersFilter">
                     <div class="searchFiltersFilterWrapicon">
-                    <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
                     </div>
                     <span class="searchFiltersFilterTitle">Romantique</span>
                 </div>
                 <div class="searchFiltersFilter">
                     <div class="searchFiltersFilterWrapicon">
-                    <i class="fas fa-dog"></i>
+                        <i class="fas fa-dog"></i>
                     </div>
                     <span class="searchFiltersFilterTitle">Animaux acceptés</span>
                 </div>
@@ -65,7 +68,7 @@
             <div class="InfoIcon">
                 <i class="fas fa-info"></i>
             </div>
-            <span class="infoTitle">Plus de 500 logements sont disponibles dans cette ville</span>
+            <p class="infoTitle">Plus de 500 logements sont disponibles dans cette ville</p>
     </section>
     <section class="hebergements" id="hebergements"> <!-- Hébergement -->
         <div class="popular">
@@ -74,8 +77,8 @@
                     <div class=box>
                         <img src="images/hebergement/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière"/>
                         <div class="descriptif">
-                            <span><B>Auberge la Cannebière</B></span>
-                            <span>Nuit à partir de <B>25€</B></span>
+                            <p style="margin-block-start: 0; margin-block-end: 0;"><span class="bolder">Auberge la Cannebière</span></p>
+                            <p style="margin-block-start: 0; margin-block-end: 0;">Nuit à partir de <span class="bolder">25€</span></p>
                             <div class="stars">
                                 <span class="full-star"><i class="fas fa-star"></i></span>
                                 <span class="full-star"><i class="fas fa-star"></i></span>
@@ -88,8 +91,8 @@
                     <div class=box>
                         <img src="images/hebergement/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port"/>
                         <div class="descriptif">
-                            <span><B>Hôtel du port</B></span>
-                            <span>Nuit à partir de <B>52€</B></span>
+                            <p style="margin-block-start: 0; margin-block-end: 0;"><span class="bolder">Hôtel du port</span></p>
+                            <p style="margin-block-start: 0; margin-block-end: 0;">Nuit à partir de <span class="bolder">52€</span></p>
                             <div class="stars">
                                 <span class="full-star"><i class="fas fa-star"></i></span>
                                 <span class="full-star"><i class="fas fa-star"></i></span>
@@ -102,8 +105,8 @@
                     <div class=box>
                         <img src="images/hebergement/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes"/>
                         <div class="descriptif">
-                            <span><B>Hôtel Les mouettes</B></span>
-                            <span>Nuit à partir de <B>76€</B></span>
+                            <p style="margin-block-start: 0; margin-block-end: 0;"><span class="bolder">Hôtel Les mouettes</span></p>
+                            <p style="margin-block-start: 0; margin-block-end: 0;">Nuit à partir de <span class="bolder">76€</span></p>
                             <div class="stars">
                                 <span class="full-star"><i class="fas fa-star"></i></span>
                                 <span class="full-star"><i class="fas fa-star"></i></span>
@@ -116,8 +119,8 @@
                     <div class=box>
                         <img src="images/hebergement/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer"/>
                         <div class="descriptif">
-                            <span><B>Hôtel de la mer</B></span>
-                            <span>Nuit à partir de <B>46€</B></span>
+                            <p style="margin-block-start: 0; margin-block-end: 0;"><span class="bolder">Hôtel de la mer</span></p>
+                            <p style="margin-block-start: 0; margin-block-end: 0;">Nuit à partir de <span class="bolder">46€</span></p>
                             <div class="stars">
                                 <span class="full-star"><i class="fas fa-star"></i></span>
                                 <span class="full-star"><i class="fas fa-star"></i></span>
@@ -130,8 +133,8 @@
                     <div class=box>
                         <img src="images/hebergement/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier"/>
                         <div class="descriptif">
-                            <span><B>Auberge Le Panier</B></span>
-                            <span>Nuit à partir de <B>23€</B></span>
+                            <p style="margin-block-start: 0; margin-block-end: 0;"><span class="bolder">Auberge Le Panier</span></p>
+                            <p style="margin-block-start: 0; margin-block-end: 0;">Nuit à partir de <span class="bolder">23€</span>
                             <div class="stars">
                                 <span class="full-star"><i class="fas fa-star"></i></span>
                                 <span class="full-star"><i class="fas fa-star"></i></span>
@@ -156,7 +159,7 @@
                         </div>
                     </div> 
                 </div> 
-            <p><B>Afficher plus</B></p>  
+            <p><span class="bolder">Afficher plus</span></p>  
         </div>
         <aside class="most-popular"> <!--Box Les plus populaires-->
             <div class="most-popular-text">
@@ -168,8 +171,8 @@
                         <img src="images/hebergement/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin"/>
                         <div class="descriptif-aside">
                             <div class="text">
-                                <span><B>Hôtel Le soleil du matin</B><br /></span>
-                                <span>Nuit à partir de <B>128€</B></span>    
+                                <p style="margin-block-start: 0; margin-block-end: 0;"><span class="bolder">Hôtel Le soleil du matin</span></p>
+                                <p style="margin-block-start: 0; margin-block-end: 0;">Nuit à partir de <span class="bolder">128€</span></p>    
                             </div>                            
                             <div class="stars">
                                 <span class="full-star"><i class="fas fa-star"></i></span>
@@ -184,8 +187,8 @@
                         <img src="images/hebergement/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambres d'hôtes"/>
                         <div class="descriptif-aside">
                             <div class="text">
-                                <span><B>Au coeur de l'eau Chambres d'hôtes</B><br /></span>
-                                <span>Nuit à partir de <B>71€</B></span>
+                                <p style="margin-block-start: 0; margin-block-end: 0;"><span class="bolder">Au coeur de l'eau Chambres d'hôtes</span></p>
+                                <p style="margin-block-start: 0; margin-block-end: 0;">Nuit à partir de <span class="bolder">71€</span></p>
                             </div>                            
                             <div class="stars">
                                 <span class="full-star"><i class="fas fa-star"></i></span>
@@ -196,12 +199,12 @@
                             </div>    
                         </div>
                     </div>
-                    <div class=box-aside>
+                    <div class=box-aside-bleu>
                         <img src="images/hebergement/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc"/>
-                        <div class="descriptif-aside">
+                        <div class="descriptif-aside-bleu">
                             <div class="text">
-                                <p><B>Hôtel Tout bleu et Blanc</B></p>
-                                <p>Nuit à partir de <B>68€</B></p>
+                                <p style="margin-block-start: 0; margin-block-end: 0;"><span class="bolder">Hôtel Tout bleu et Blanc</span></p>
+                                <p style="margin-block-start: 0; margin-block-end: 0;">Nuit à partir de <span class="bolder">68€</span></p>
                             </div>                            
                             <div class="stars">
                                 <span class="full-star"><i class="fas fa-star"></i></span>
@@ -221,61 +224,75 @@
             <div class="box-port">
                 <img src="images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"/>
                 <div class="text-activities">
-                    <h3>Vieux Port</h3>
-                </div>                
-            </div>
-            <div class="box-dame-longchamp">
-                <div class="box-longchamp"> 
-                    <img src="images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"/>
-                    <div class="text-activities">
-                        <h3>Parc Longchamp</h3>
-                    </div>
+                    <p>
+                        <span class="bolder">Vieux Port</span> 
+                    </p>
                 </div>
-                <div class="box-dame">           
-                    <img src="images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre Dame de la Garde"/>
-                    <div class="text-activities">
-                        <h3>Notre-Dame-de-la-Garde</h3>
-                    </div>
-                </div>
-            </div> 
-            <div class="box-calanques">           
-                <img src="images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Port national des Calanques"/>
-                <div class="text-activities">
-                    <h3>Parc National des Calanques</h3>
-                </div>
-            </div>    
+            </div>  
             <div class="box-pomegues-frioul">
                 <div class="box-pomegues">           
                     <img src="images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"/>
                     <div class="text-activities">
-                        <h3>Fort de Pomègues</h3>
+                        <p>
+                            <span class="bolder">Fort de Pomègues</span>
+                        </p>
                     </div>
                 </div>
                 <div class="box-frioul"> 
                     <img src="images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul"/>
                     <div class="text-activities">
-                        <h3>Îles du Frioul</h3>   
+                        <p>
+                            <span class="bolder">Îles du Frioul</span>
+                        </p>   
                     </div>                      
                 </div>
-            </div>                                      
+            </div> 
+            <div class="box-calanques">           
+                <img src="images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Port national des Calanques"/>
+                <div class="text-activities">
+                    <p>
+                        <span class="bolder">Parc National des Calanques</span>
+                    </p>
+                </div>
+            </div>                   
+            <div class="box-dame-longchamp">
+                <div class="box-longchamp"> 
+                    <img src="images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"/>
+                    <div class="text-activities">
+                        <p>
+                            <span class="bolder">Parc Longchamp</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="box-dame">           
+                    <img src="images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre Dame de la Garde"/>
+                    <div class="text-activities">
+                        <p>
+                            <span class="bolder">Notre-Dame-de-la-Garde</span>
+                        </p>
+                    </div>
+                </div>
+            </div>           
         </div>
     </section>
     <footer> 
-        <div class="a-propos">
-            <h2>A propos</h2>
-            <p>Fonctionnement du site</p>
-            <p>Conditions générales de vente</p>
-            <p>Données et confidentialité</p>
-        </div>
-        <div class="nos-hebergements">
-            <h2>Nos hébergements</h2>
-            <p>Charte qualité</p>
-            <p>Soumettre votre hôtel</p>
-        </div>
-        <div class="assistance">
-            <h2>Assistance</h2>
-            <p>Centre d'aide</p>
-            <p>Nous contacter</p>
+        <div class="FooterText">      
+            <div class="a-propos">
+                <h2>A propos</h2>
+                <p>Fonctionnement du site</p>
+                <p>Conditions générales de vente</p>
+                <p>Données et confidentialité</p>
+            </div>
+            <div class="nos-hebergements">
+                <h2>Nos hébergements</h2>
+                <p>Charte qualité</p>
+                <p>Soumettre votre hôtel</p>
+            </div>
+            <div class="assistance">
+                <h2>Assistance</h2>
+                <p>Centre d'aide</p>
+                <p>Nous contacter</p>
+            </div>
         </div>
     </footer>
 </body>

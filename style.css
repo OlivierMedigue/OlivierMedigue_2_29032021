@@ -9,26 +9,13 @@
 }
 body {
     font-family: 'Raleway', Arial, sans-serif;
-    max-width: 1440px;
-    margin: auto;
+
 }
 a:link {
     text-decoration: none;
 }
-
-/*responsive*/
-
-@media all and (max-width: 1240px){
-
-    .popular{
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-bottom: 2em;
-    }
-    .aside{
-        width: auto;
-        margin-bottom: 2em;
-    }
+.bolder{
+    font-weight: bolder;
 }
 
 /*Header*/
@@ -43,29 +30,37 @@ a:link {
 	align-items: space-between;
 	justify-content: space-between;
 	flex-wrap: wrap;
+    margin-top: 0;
 }
-header img {
+.header img {
 	max-width: 100%;
 	height: auto;
+}
+.main-nav-menu{
+    margin-top: 0;
 }
 .main-nav li {
 	display: inline;
     text-decoration: none;   
 }
-.main-nav li :hover{
+.main-nav li #text:hover{
     border-top: 3px solid #0065FC;
 }
-.text-inscription{
-    text-decoration: none;
+.inscription{
     font-weight: bold;
 }
 .main-nav a{
 	display: inline-block;
-	padding:  2em 2em; 
+	padding:  2em 2em;
 }
 
 /*search bar*/
 
+.filter-menu{
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+}
 .searchbar{
     border: 0 solid #f2f2f2;
     display: inline-flex;
@@ -79,7 +74,7 @@ header img {
     background-color: #f2f2f2;
     justify-content: center;
     align-items: center;
-    width: 40px;
+    width: 45px;
 }
 .textsearch{
     width: 200px;
@@ -88,7 +83,7 @@ header img {
 }
 .research{
     background-color: #0065FC;
-    width: 130px;       
+    width: 44%;       
     border: none;
     color: white;
     font-weight: bold;
@@ -99,6 +94,7 @@ header img {
 .filters-icons{
     display: flex;
     flex-direction: row;
+    margin-left: 3em;
 }
 .searchFiltersFilter:hover{
     background-color: #0065FC;
@@ -116,8 +112,8 @@ header img {
 .searchFiltersFilterWrapicon {
     background-color: #DEEBFF;
     border-radius: 100%;
-    height: 3rem;
-    width: 3rem;
+    height: 3.5rem;
+    width: 3.5rem;
     min-height: 2.5rem;
     min-width: 2.5rem;
     display: flex;
@@ -125,6 +121,10 @@ header img {
     justify-content: center;
     margin: -2px;
     color: #0065FC;
+}
+.searchFiltersFilterTitle{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 .Filters {
     display: flex;
@@ -142,8 +142,8 @@ header img {
 .info{
     display: flex;
     flex-direction: row;
-    width: 28em;
-    justify-content: space-between;
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
 .InfoIcon{
     display: flex;
@@ -154,6 +154,7 @@ header img {
     height: 2em;
     align-items: center;
     justify-content: center;
+    margin-right: 2em;
 }
 .infotitle{
     display: flex;
@@ -166,10 +167,12 @@ header img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
-    align-items: stretch;
     flex-wrap: wrap;
     margin-top: 3em;
+    margin-bottom: 3em;
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
 }
 
 /*Body class=popular*/
@@ -178,8 +181,8 @@ header img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50em;
-    height: 38em;
+    width: 65%;
+    min-height: 38em;
     align-content: center;
     text-align: left;
     background-color: #F2F2F2;
@@ -193,12 +196,12 @@ header img {
     justify-content: space-around;
     align-content: space-around;
     align-items: center;
-    height: 28em;
-    width: 50em;    
+    height: 100%;
+    width: 100%;    
 }
 .box{
-    width: 220px;
-    height: 180px;
+    width: 25%;
+    height: 35%;
     border-radius: 1rem;
     box-shadow :0 6px 10px grey;
     padding: 0.5em;
@@ -225,7 +228,6 @@ header img {
     flex-wrap: wrap;
     font-size: 0.9em;
     margin-left: 1em;
-    margin-bottom: 1em;
 }
 
 /*Body aside class=Most popular*/
@@ -233,8 +235,8 @@ header img {
 .most-popular{
     display: flex;
     flex-direction: column;
-    width: 300px;
-    height: 38em;
+    width: 25%;
+    min-height: 38em;
     background-color: #F2F2F2;
     border-radius: 1rem;
     padding: 1em;
@@ -248,22 +250,22 @@ header img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    height: 500px;
-    margin-top: 2em;
+    justify-content: space-around;
+    height: 100%;
+    margin-top: 1em;
 }
 .box-aside{
     display: flex;
     flex-direction: row;
-    width: 260px;
-    height: 130px;
+    width: 85%;
+    height: 25%;
     border-radius: 1rem;
     box-shadow :0 6px 10px grey;
     padding: 0.5em;
     background-color: white;
 }  
 .box-aside img{
-    width: 6.4em;
+    width: 40%;
     height: 100%;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -275,14 +277,41 @@ header img {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-left: 0.5em;
-    font-size: 0.9em;
+    font-size: 0.9em;  
+}
+.box-aside-bleu{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    height: 25%;
+    border-radius: 1rem;
+    box-shadow :0 6px 10px grey;
+    padding: 0.5em;
+    background-color: white;
+}  
+.box-aside-bleu img{
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    object-fit: cover;   
+}
+.descriptif-aside-bleu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 0.5em;
+    font-size: 0.9em;  
 }
 
 /*Section Activities*/
 
 .activities{
-    margin-top: 5em;
-    margin-bottom: 4em;
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+    padding-top: 3em;
 }
 .full-activities{
     display: flex;
@@ -290,9 +319,11 @@ header img {
     justify-content: space-between;
     align-content: space-between;
     margin-top: 3em;
+    width: 100%;
+    height: 25em;
 }
 .text-activities{
-    margin-left: 10px;
+    margin-left: 10px;    
 }
 /*Box Dame-Longchamp*/
 
@@ -300,11 +331,11 @@ header img {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
-    order: 4;
+    width: 20%;
+    height: 100%;
 }
 .box-longchamp img{
-    height: 12.4em;
-    max-height: 100%;
+    height: 76%;
     width: 100%;
     max-width: 100%;
     object-fit: cover;
@@ -313,15 +344,14 @@ header img {
     border-radius: 15px 15px 0px 0px;  
 }
 .box-longchamp{
-    width: 18.8em;
-    height: 15.8em;
+    width: 100%;
+    height: 51%;
     border-radius: 1rem;
     box-shadow: 1px 3px 8px #d6d6d6;
     font-size: 0.9em;
-    
 }
 .box-dame img{
-    height: 7.4em;
+    height: 71%;
     max-height: 100%;
     width: 100%;
     max-width: 100%;
@@ -331,8 +361,8 @@ header img {
     border-radius: 15px 15px 0px 0px;  
 }
 .box-dame{
-    width: 18.8em;
-    height: 10.8em;
+    width: 100%;
+    height: 39%;
     border-radius: 1rem;
     box-shadow: 1px 3px 8px #d6d6d6;
     font-size: 0.9em;
@@ -344,10 +374,11 @@ header img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    order: 2; 
+    width: 20%;
+    height: 100%;
 }
 .box-pomegues img{
-    height: 12.4em;
+    height: 79%;
     max-height: 100%;
     width: 100%;
     max-width: 100%;
@@ -357,14 +388,14 @@ header img {
     border-radius: 15px 15px 0px 0px;  
 }
 .box-pomegues{
-    width: 18.8em;
-    height: 15.8em;
+    width: 100%;
+    height: 54%;
     border-radius: 1rem;
     box-shadow: 1px 3px 8px #d6d6d6;
     font-size: 0.9em;
 }
 .box-frioul img{
-    height: 7.4em;
+    height: 69%;
     max-height: 100%;
     width: 100%;
     max-width: 100%;
@@ -374,8 +405,8 @@ header img {
     border-radius: 15px 15px 0px 0px;  
 }
 .box-frioul{
-    width: 18.8em;
-    height: 10.8em;
+    width: 100%;
+    height: 39%;
     border-radius: 1rem;
     box-shadow: 1px 3px 8px #d6d6d6;
     font-size: 0.9em;
@@ -384,37 +415,34 @@ header img {
 /*box calanques*/
 
 .box-calanques img{
-    height: 24.4em;
+    height: 88%;
     max-height: 100%;
     width: 100%;
-    max-width: 100%;
     object-fit: cover;
     background-color: white;
     border-radius: 15px 15px 0px 0px;
 }
 .box-calanques{
-    width: 18.8em;
-    height: 27.8em;
+    width: 20%;
+    height: 100%;
     border-radius: 1rem;
     box-shadow: 1px 3px 8px #d6d6d6;
     font-size: 0.9em;
-    order: 3;
 }
 
 /*box-port*/
 
 .box-port img{
-    height: 24.4em;
+    height: 88%;
     max-height: 100%;
     width: 100%;
-    max-width: 100%;
     object-fit: cover;
     background-color: white;
     border-radius: 15px 15px 0px 0px;
 }
 .box-port{
-    width: 18.8em;
-    height: 27.8em;
+    width: 20%;
+    height: 100%;
     border-radius: 1rem;
     box-shadow: 1px 3px 8px #d6d6d6;
     font-size: 0.9em;
@@ -424,10 +452,19 @@ header img {
 
 footer{
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: row;
     background-color: #F2F2F2;
-    padding-right: 15em;
+    margin-top: 4em;
 }
-
+.FooterText{
+    display: flex;
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+}
+.nos-hebergements{
+    margin-left: 20%;
+}
+.assistance{
+    margin-left: 20%;
+}
