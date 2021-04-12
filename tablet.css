@@ -11,13 +11,17 @@
     width: 75%;
     align-content: center;
 }
+.filter-menu #FilterTitle{
+    font-size: 1.3em;
+    font-weight: bolder;
+}
 .Filters {
     display: flex;
     margin-top: 2rem;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-    width: 80%;
+    width: 90%;
 }
 .filters-icons {
     display: flex;
@@ -130,4 +134,144 @@
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     object-fit: cover;
+}
+
+/*activities*/
+
+.activities {
+    width: 75%;
+    margin: auto;
+    padding-top: 3em;
+    height: 80em;
+    padding-bottom: 5em;
+}
+.full-activities {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding: 1em 0 1em 0;
+}
+.box-port {
+    width: 100%;
+    height: 15%;
+    border-radius: 1rem;
+    box-shadow: 1px 3px 8px #d6d6d6;
+    font-size: 0.9em;
+}
+.box-port img {
+    height: 76%;
+    width: 100%;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+}
+.box-pomegues-frioul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 30%;
+}
+.box-pomegues {
+    width: 100%;
+    height: 45%;
+    border-radius: 1rem;
+    box-shadow: 1px 3px 8px #d6d6d6;
+    font-size: 0.9em;
+}
+.box-pomegues img {
+    height: 76%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 30%;
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+}
+.box-frioul {
+    width: 100%;
+    height: 45%;
+    border-radius: 1rem;
+    box-shadow: 1px 3px 8px #d6d6d6;
+    font-size: 0.9em;
+}
+.box-frioul img {
+    height: 76%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 20%;
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+}
+.box-calanques {
+    width: 100%;
+    height: 15%;
+    border-radius: 1rem;
+    box-shadow: 1px 3px 8px #d6d6d6;
+    font-size: 0.9em;
+}
+.box-calanques img {
+    height: 76%;
+    width: 100%;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+}
+.box-dame-longchamp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 30%;
+}
+.box-longchamp {
+    width: 100%;
+    height: 45%;
+    border-radius: 1rem;
+    box-shadow: 1px 3px 8px #d6d6d6;
+    font-size: 0.9em;
+}
+.box-longchamp img {
+    height: 76%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 40%;
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+}
+.box-dame {
+    width: 100%;
+    height: 45%;
+    border-radius: 1rem;
+    box-shadow: 1px 3px 8px #d6d6d6;
+    font-size: 0.9em;
+}
+.box-dame img {
+    height: 76%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 20%;
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+}
+
+/*footer*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F2F2F2;
+    margin-top: 6em;
+}
+.FooterText {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    font-size: 0.9em;
+}
+.FootText{
+    font-size: 1.2em;
 }

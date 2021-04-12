@@ -41,13 +41,15 @@ a:link {
 }
 .main-nav li {
 	display: inline;
-    text-decoration: none;   
+    text-decoration: none;
 }
 .main-nav li #text:hover{
     border-top: 3px solid #0065FC;
+    color: #0065FC;
 }
-.inscription{
+#inscription{
     font-weight: bold;
+    color: #0065FC;
 }
 .main-nav a{
 	display: inline-block;
@@ -60,6 +62,10 @@ a:link {
     width: 1440px;
     max-width: 100%;
     margin: auto;
+}
+.filter-menu #FilterTitle{
+    font-size: 1.4em;
+    font-weight: bolder;
 }
 .searchbar{
     border: 0 solid #f2f2f2;
@@ -461,6 +467,9 @@ footer{
     width: 1440px;
     max-width: 100%;
     margin: auto;
+}
+.FootText{
+    font-size: 1.3em;
 }
 .nos-hebergements{
     margin-left: 20%;
