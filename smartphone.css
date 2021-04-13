@@ -1,0 +1,169 @@
+@media all and (max-width:767px)
+{
+
+/*header*/
+
+.main-header{
+    width: 80%;
+    align-content: center;
+    margin: auto;
+}
+.container{
+    display: inline-block;
+    justify-content: center;
+    margin: auto;
+}
+.logoReservia{
+    float: left;
+    width: 250px;
+    border: 1px solid black;
+}
+.main-nav-menu{
+    float: right;
+}
+
+/*filterMenu*/
+
+.filter-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+}
+.filter-menu #FilterTitle{
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+.filters-icons {
+    flex-wrap: wrap;
+    margin-left: 0;
+}
+.searchFiltersFilter {
+    display: flex;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/*hebergements*/
+
+.hebergements {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.popular {
+    width: 75%;
+    height: 88em;
+}
+.box {
+    width: 90%;
+    height: 13%;
+}
+.most-popular {
+    display: flex;
+    width: 75%;
+    padding: 1em;
+    height: 45em;
+    margin-bottom: 5em;
+}
+.box-aside {
+    width: 90%;
+}
+.box-aside img {
+    width: 47%;
+}
+.box-aside-bleu {
+    width: 90%;
+}
+.box-aside-bleu img {
+    width: 47%;
+}
+
+/*activities*/
+
+.activities {
+    width: 75%;
+    height: 80em;
+    padding-bottom: 5em;
+}
+.full-activities {
+    flex-flow: column;
+    height: 100%;
+    flex-direction: column;
+    padding: 1em 0 1em 0;
+}
+.box-port {
+    width: 100%;
+    height: 15%;
+}
+.box-port img {
+    height: 76%;
+}
+.box-pomegues-frioul {
+    width: 100%;
+    height: 30%;
+}
+.box-pomegues {
+    width: 100%;
+    height: 45%;
+}
+.box-pomegues img {
+    height: 76%;
+    object-position: 30%;
+}
+.box-frioul {
+    height: 45%;
+}
+.box-frioul img {
+    height: 76%;
+    object-position: 20%;
+}
+.box-calanques {
+    width: 100%;
+    height: 15%;
+}
+.box-calanques img {
+    height: 76%;
+}
+.box-dame-longchamp {
+    width: 100%;
+    height: 30%;
+}
+.box-longchamp {
+    width: 100%;
+    height: 45%;
+}
+.box-longchamp img {
+    object-position: 40%;
+}
+.box-dame {
+    width: 100%;
+    height: 45%;
+}
+.box-dame img {
+    height: 76%;
+}
+
+/*footer*/
+
+footer {
+    margin-top: 6em;
+}
+.FooterText {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+.FootText{
+    font-size: 1.2em;
+}
+.nos-hebergements{
+    margin: 0;
+}
+.assistance{
+    margin: 0;
+}
