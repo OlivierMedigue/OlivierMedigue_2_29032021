@@ -47,6 +47,18 @@
     cursor: pointer;
     font-weight: bold;
 }
+.ResearchText{
+    display: none;
+}
+.research{
+    width: 70px;
+    border-top-left-radius: 1em;  
+    border-bottom-left-radius: 1em;
+    margin-left: -2px;
+}
+.fas.fa-search{
+    display: initial;
+}
 
 /*hebergements*/
 
