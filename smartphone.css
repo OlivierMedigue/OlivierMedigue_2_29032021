@@ -21,9 +21,23 @@
 .main-nav-menu{
     float: right;
 }
+.main-nav li #text:hover{
+    border-bottom: 3px solid #0065FC;
+    border-top: none;
+    color: #0065FC;
+}
 
 /*filterMenu*/
 
+.Filters:nth-child(3){
+    align-self: flex-start;
+}
+.Filters {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    width: 100%;
+}
 .filter-menu {
     display: flex;
     flex-direction: column;
@@ -35,8 +49,9 @@
     font-weight: bolder;
 }
 .filters-icons {
-    flex-wrap: wrap;
+    flex-direction: column;
     margin-left: 0;
+    width: 17em;
 }
 .searchFiltersFilter {
     display: flex;

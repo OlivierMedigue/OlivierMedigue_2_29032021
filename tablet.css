@@ -21,6 +21,11 @@
 .main-nav-menu{
     float: right;
 }
+.main-nav li #text:hover{
+    border-bottom: 3px solid #0065FC;
+    border-top: none;
+    color: #0065FC;
+}
 
 /*filterMenu*/
 

@@ -36,8 +36,16 @@ a:link {
 	max-width: 100%;
 	height: auto;
 }
+.main-nav{
+    display: flex;
+    flex-direction: row;
+}
 .main-nav-menu{
     margin-top: 0;
+}
+.suscribe{
+    margin-top: 0;
+    padding-left: 0;
 }
 .main-nav li {
 	display: inline;
@@ -155,14 +163,10 @@ a:link {
 
 .info{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.info{
-    display: flex;
     flex-direction: row;
     margin-top: 1em;
     margin-bottom: 2em;
+    align-items: center;
 }
 .InfoIcon{
     display: flex;
