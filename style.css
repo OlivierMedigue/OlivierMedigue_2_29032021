@@ -203,7 +203,7 @@ header{
     align-content: center;
     background-color: #F2F2F2;
     border-radius: 1em;
-    padding: 1em;
+    padding: 0 1em 1em;
 }
 .full-box{
     display: flex;
@@ -241,7 +241,6 @@ header{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    font-size: 0.9em;
     margin-left: 1em;
 }
 
@@ -254,7 +253,6 @@ header{
     min-height: 38em;
     background-color: #F2F2F2;
     border-radius: 1em;
-    padding-top: 1em;
 }
 .most-popular-text{
     display: flex;

@@ -1,0 +1,35 @@
+@media screen and (min-width:992px) and (max-width:1114px)
+{
+
+/*hebergement*/
+
+.popular {
+    width: 65%;
+    height: 48em;
+    padding: 0;
+}
+.populartext{
+    padding-left: 15px;
+}
+.full-box{
+    width: 98%;
+    margin: auto;
+}
+.box {
+    width: 43%;
+    height: 29%;
+}
+.most-popular{
+    width: 32%;
+    padding-top: 0;
+}
+.full-box-aside{
+    height: 85%;
+}
+.box-aside{
+    height: 24%;
+}  
+.box-aside-bleu{
+    height: 24%;
+}  
+}
