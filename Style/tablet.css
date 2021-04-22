@@ -1,9 +1,9 @@
 @media screen and (min-width:770px) and (max-width:991px)
 {
 
-/*hebergements*/
+/*hosts*/
 
-.hebergements {
+.hosts {
     flex-direction: column-reverse;
     margin-top: 2em;
     margin-bottom: 3em;
@@ -13,10 +13,10 @@
     height: 48em;
     padding: 0;
 }
-.populartext{
+.populartext {
     padding-left: 15px;
 }
-.full-box{
+.full-box {
     width: 98%;
     margin: auto;
 }
@@ -60,7 +60,6 @@
 /*activities*/
 
 .activities {
-    width: auto;
     padding-top: 0;
     height: 100em;
 }
@@ -133,15 +132,7 @@
 
 /*footer*/
 
-.FooterText {
-    display: flex;
-    width: 100%;
+.footer-text {
     justify-content: space-between;
-}
-.nos-hebergements{
-    margin: 0;
-}
-.assistance{
-    margin: 0;
 }
 }

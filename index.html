@@ -11,13 +11,13 @@
     <link rel="stylesheet" media="screen and (max-width: 1114px)" href="Style/desktop.css" />
 </head>
 <body>
-    <header class="main-header"><!-- Logo et menu--> 
+    <header class="main-header"><!-- Logo and menu--> 
         <div class="container">
             <img src="images/logo/Reservia@3x.png" alt="logo Reservia">
             <nav class="main-nav">
                 <ul class="main-nav-menu">
                     <div class="navText">
-                        <li><a href="#hebergements" id="text">Hébergements</a></li>
+                        <li><a href="#hosts" id="text">Hébergements</a></li>
                         <li><a href="#activities" id="text">Activités</a></li>   
                     </div>
                     <div class="suscribe-text">
@@ -27,10 +27,8 @@
             </nav>
         </div>
     </header>
-    <section class="filter-menu"> <!-- principal title and search field-->
-        <p id="FilterTitle"> 
-            Trouvez votre hébergement pour des vacances de rève
-        </p>  
+    <section class="filter-menu"><!-- principal title and search field-->
+        <h1>Trouvez votre hébergement pour des vacances de rève</h1>  
         <p>En plein centre ville ou en pleine nature</p>
         <form class="searchbar">
             <div class="icon">
@@ -38,37 +36,39 @@
             </div>
             <input class="text-search" name="recherche" value="Marseille,France">
             <button class="research">
-                <p class="noMarginText" id="ResearchText">
-                    <span>Recherche</span>
-                </p>
+                <span class="no-margin-text" id="ResearchText">
+                    Recherche
+                </span>
                 <i class="fas fa-search"></i>
             </button>        
         </form>
-        <div class="Filters">
-            <div class="filtertext">
-                <p><span class="bolder">Filtres</span></p>
+        <div class="filters">
+            <div class="filter-text">
+                <p>
+                    <span class="bolder">Filtres</span>
+                </p>
             </div>
             <div class= "filters-icons">
-                <div class="searchFilters">
-                    <div class="searchFiltersIcon">
+                <div class="search-filters">
+                    <div class="search-filter-icon">
                         <i class="fas fa-money-bill-wave"></i>
                     </div>
                     <span class="searchFiltersTitle">Économique</span>
                 </div>
-                <div class="searchFilters">
-                    <div class="searchFiltersIcon">
+                <div class="search-filters">
+                    <div class="search-filter-icon">
                         <i class="fas fa-child"></i>
                     </div>
                     <span class="searchFiltersTitle">Familial</span>
                 </div>
-                <div class="searchFilters">
-                    <div class="searchFiltersIcon">
+                <div class="search-filters">
+                    <div class="search-filter-icon">
                         <i class="fas fa-heart"></i>
                     </div>
                     <span class="searchFiltersTitle">Romantique</span>
                 </div>
-                <div class="searchFilters">
-                    <div class="searchFiltersIcon">
+                <div class="search-filters">
+                    <div class="search-filter-icon">
                         <i class="fas fa-dog"></i>
                     </div>
                     <span class="searchFiltersTitle">Animaux acceptés</span>
@@ -76,12 +76,13 @@
             </div>
         </div>
         <div class="info"> <!--info bar-->
-            <div class="InfoIcon">
+            <div class="info-icon">
                 <i class="fas fa-info"></i>
             </div>
-            <p class="infoTitle">Plus de 500 logements sont disponibles dans cette ville</p>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
     </section>
-    <section class="hebergements" id="hebergements"> <!-- Hébergement -->
+    <section class="hosts" id="hosts"> <!-- Hébergement -->
         <div class="popular">
             <h2 class="populartext">Hébergements à Marseille</h2>
                 <div class="full-box">
@@ -89,10 +90,10 @@
                         <a href="Link/link.html" target="_blank">
                             <img src="images/hebergement/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière"/>
                             <div class="describe">
-                                <p class="noMarginText">
+                                <p class="no-margin-text">
                                     <span class="bolder">Auberge la Cannebière</span>
                                 </p>
-                                <p class="noMarginText">
+                                <p class="no-margin-text">
                                     Nuit à partir de <span class="bolder">25€</span>
                                 </p>
                                 <div class="stars">
@@ -109,10 +110,10 @@
                         <a href="Link/link.html" target="_blank">
                             <img src="images/hebergement/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port"/>
                             <div class="describe">
-                                <p class="noMarginText">
+                                <p class="no-margin-text">
                                     <span class="bolder">Hôtel du port</span>
                                 </p>
-                                <p class="noMarginText">
+                                <p class="no-margin-text">
                                     Nuit à partir de <span class="bolder">52€</span>
                                 </p>
                                 <div class="stars">
@@ -129,10 +130,10 @@
                         <a href="Link/link.html" target="_blank">
                             <img src="images/hebergement/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes"/>
                             <div class="describe">
-                                <p class="noMarginText">
+                                <p class="no-margin-text">
                                     <span class="bolder">Hôtel Les mouettes</span>
                                 </p>
-                                <p class="noMarginText">
+                                <p class="no-margin-text">
                                     Nuit à partir de <span class="bolder">76€</span>
                                 </p>
                                 <div class="stars">
@@ -149,10 +150,10 @@
                         <a href="Link/link.html" target="_blank">
                             <img src="images/hebergement/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer"/>
                             <div class="describe">
-                                <p class="noMarginText">
+                                <p class="no-margin-text">
                                     <span class="bolder">Hôtel de la mer</span>
                                 </p>
-                                <p class="noMarginText">
+                                <p class="no-margin-text">
                                     Nuit à partir de <span class="bolder">46€</span>
                                 </p>
                                 <div class="stars">
@@ -169,10 +170,10 @@
                         <a href="Link/link.html" target="_blank">
                             <img src="images/hebergement/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier"/>
                             <div class="describe">
-                                <p class="noMarginText">
+                                <p class="no-margin-text">
                                     <span class="bolder">Auberge Le Panier</span>
                                 </p>
-                                <p class="noMarginText">
+                                <p class="no-margin-text">
                                     Nuit à partir de <span class="bolder">23€</span>
                                 </p>
                                 <div class="stars">
@@ -189,10 +190,10 @@
                         <a href="Link/link.html" target="_blank">
                             <img src="images/hebergement/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina"/>
                             <div class="describe">
-                                <p class="noMarginText">
+                                <p class="no-margin-text">
                                     <span class="bolder">Hôtel chez Amina</span>
                                 </p>
-                                <p class="noMarginText">
+                                <p class="no-margin-text">
                                     Nuit à partir de <span class="bolder">96€</span>
                                 </p>
                                 <div class="stars">
@@ -218,10 +219,10 @@
                         <img src="images/hebergement/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin"/>
                         <div class="describe-aside">
                             <div class="text">
-                                <p class="noMarginText">
+                                <p class="no-margin-text">
                                     <span class="bolder">Hôtel Le soleil du matin</span>
                                 </p>
-                                <p class="noMarginText">
+                                <p class="no-margin-text">
                                     Nuit à partir de <span class="bolder">128€</span>
                                 </p>    
                             </div>                            
@@ -238,10 +239,10 @@
                         <img src="images/hebergement/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambres d'hôtes"/>
                         <div class="describe-aside">
                             <div class="text">
-                                <p class="noMarginText">
+                                <p class="no-margin-text">
                                     <span class="bolder">Au coeur de l'eau Chambres d'hôtes</span>
                                 </p>
-                                <p class="noMarginText">
+                                <p class="no-margin-text">
                                     Nuit à partir de <span class="bolder">71€</span>
                                 </p>
                              </div>                            
@@ -258,10 +259,10 @@
                         <img src="images/hebergement/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc"/>
                         <div class="describe-aside-bleu">
                             <div class="text">
-                                <p class="noMarginText">
+                                <p class="no-margin-text">
                                     <span class="bolder">Hôtel Tout bleu et Blanc</span>
                                 </p>
-                                <p class="noMarginText">
+                                <p class="no-margin-text">
                                     Nuit à partir de <span class="bolder">68€</span>
                                 </p>
                             </div>                            
@@ -347,28 +348,22 @@
         </div>
     </section>
     <footer> 
-        <div class="FooterText">      
-            <div class="a-propos">
-                <p class="FootText">
-                    <span class="bolder">A propos</span>
-                </p>
-                <p>Fonctionnement du site</p>
-                <p>Conditions générales de vente</p>
-                <p>Données et confidentialité</p>
+        <div class="footer-text">      
+            <div class="about">
+                <h3>A propos</h3>
+                <p class="no-fm">Fonctionnement du site</p>
+                <p class="no-fm">Conditions générales de vente</p>
+                <p class="no-fm">Données et confidentialité</p>
             </div>
-            <div class="nos-hebergements">
-                <p class="FootText">
-                    <span class="bolder">Hébergements</span> 
-                </p>
-                <p>Charte qualité</p>
-                <p>Soumettre votre hôtel</p>
+            <div class="our-hosts">
+                <h3>Hébergements</h3> 
+                <p class="no-fm">Charte qualité</p>
+                <p class="no-fm">Soumettre votre hôtel</p>
             </div>
             <div class="assistance">
-                <p class="FootText">
-                    <span class="bolder">Assistance</span>
-                </p>
-                <p>Centre d'aide</p>
-                <p>Nous contacter</p>
+                <h3>Assistance</h3>
+                <p class="no-fm">Centre d'aide</p>
+                <p class="no-fm">Nous contacter</p>
             </div>
         </div>
     </footer>

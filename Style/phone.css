@@ -1,15 +1,6 @@
 @media screen and (max-width:769px)
 {
     
-.main-header .container{
-    align-items: center;
-    padding:0;
-    display: block;
-}
-.main-header{
-    margin-left: 5%;
-    margin-right: 5%;
-}
 #text:hover{
     border-bottom: 3px solid #0065FC;
     border-top: none;
@@ -20,17 +11,16 @@
     width: 100px;
     height: 50px;
     position: absolute;
-    left : 17%;
+    left : 15%;
+    top: 0;
 }
 .main-nav{
     width: 100%;
 }
 .main-nav-menu{
-    display: flex;
     flex-direction: column-reverse;
     width: 100%;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
 }
 .navText{
     display: flex;
@@ -42,21 +32,13 @@
     
 /*filterMenu*/
 
-.filter-menu {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: left;
-}
-#ResearchText{
+#ResearchText {
     display: none;
 }
-.fas.fa-search{
+.fas.fa-search {
     display: initial;        
 }
-.Filters {
+.filters {
     display: flex;
     margin-top: 2rem;
     flex-wrap: wrap;
@@ -69,7 +51,7 @@
     flex-wrap: wrap;
     width: 100%;
 }
-.searchFiltersFilter {
+.search-filters {
     display: flex;
     align-items: center;
     border: 2px solid #d9d9d9;
@@ -79,35 +61,31 @@
     font-weight: bold;
 }
 
-/*hebergements*/
+/*hosts*/
 
-.hebergements {
+.hosts {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
-    margin-top: 0;
-    margin-left: 5%;
-    margin-right: 5%; 
 }
 .popular {
     width: 100%;
     height: 92em;
     background: none;
-    margin-left: 0;
-    padding-left: 0;
+    margin: auto;
+    padding: 0;
 }
 .full-box {
     justify-content: space-between;
     height: 100%;
-    width: 100%;
+    width: 95%;
+    margin: auto;
 }
 .box {
-    width: 95%;
+    width: 100%;
     height: 14%;
 }
 .most-popular {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     height: 52em;
     margin-bottom: 1em;
@@ -141,23 +119,14 @@
 /*activities*/
 
 .activities {
-    width: auto;
-    margin: auto;
-    padding-top: 0;
     height: 80em;
     padding-bottom: 5em;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 .full-activities {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    width: 100%;
+    width: 95%;
     height: 100%;
     flex-direction: column;
-    padding: 1em 0 1em 0;
-    margin-top: 0;
+    margin: auto;
 }
 .box-port {
     width: 100%;
@@ -265,21 +234,13 @@
 /*footer*/
 
 footer {
-    display: flex;
-    flex-direction: column;
     margin-top: 6em;
 }
-.FooterText {
+.footer-text {
     display: flex;
-    margin-left: 5%;
-    width: auto;
     flex-direction: column;
-    margin-right: 5%;
-}
-.nos-hebergements{
-    margin-left: 0;
-}
-.assistance{
-    margin-left: 0;        
+    justify-content: space-between;
+    width: 90%;
+    height: 30em;    
 }
 }
