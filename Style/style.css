@@ -31,13 +31,12 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	flex-wrap: wrap;
 }
 .container img {
 	width: 150px;
 	height: 75px;
 }
-.main-nav-menu{
+.main-nav{
     display: flex;
     flex-direction: row;
     padding: 20px 0 20px 20px;
@@ -47,7 +46,7 @@ header{
     text-decoration: none;
     padding: 1.5em;    
 }
-#text:hover{
+.hover-text:hover{
     border-top: 3px solid #0065FC;
     color: #0065FC;
     padding-top: 33px;
