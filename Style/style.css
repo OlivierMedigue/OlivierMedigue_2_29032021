@@ -496,6 +496,7 @@ footer {
     margin: auto;
     display: flex;
     flex-direction: row;
+    padding-bottom: 2em;
 }
 .no-fm {
     margin-bottom: 0;
